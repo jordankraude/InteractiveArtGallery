@@ -1,3 +1,5 @@
+// Startup file and the meat of the code. Connects to the app from unsplash and defines the routes that handles calls to the api.
+
 require('dotenv').config();
 const express = require('express');
 const path = require('path');
@@ -59,7 +61,7 @@ app.get('/search/images', async (req, res) => {
   }
 });
 
-// Route handler for downloading images
+// Route handler for notifying api about downloads (per their requirements) images
 app.get('/photos/:photoId/notify', async (req, res) => {
   const photoId = req.params.photoId;
   const downloadLocation = req.query.downloadLocation;
@@ -78,8 +80,10 @@ app.get('/photos/:photoId/notify', async (req, res) => {
   }
 });
 
+// Route for downloading photos 
 app.get('/photos/:photoId/download', async (req, res) => {
   const photoId = req.params.photoId;
+  // Gets the proper url for download
   const downloadLocation = req.query.downloadLocation;
 
   try {
@@ -90,7 +94,7 @@ app.get('/photos/:photoId/download', async (req, res) => {
       }
     });
 
-    // Set headers for the image response
+    // Set headers for the image response and data handling
     res.setHeader('Content-Type', response.headers['content-type']);
     res.setHeader('Content-Disposition', `attachment; filename="photo_${photoId}.jpg"`);
 
