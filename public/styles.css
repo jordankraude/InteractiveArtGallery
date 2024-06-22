@@ -1,4 +1,7 @@
 /* Body styles */
+html, body {
+  max-width: 98.4vw;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -31,14 +34,13 @@ header {
   color: #FFF9EB; /* Light text color */
   text-align: center;
   height: 120px;
-  width: 100vw;
+  width: 100%;
 }
 
 header img {
-  height: 140px;
+  height: 100px;
   width: auto;
   margin: auto auto;
-  margin-right: -180px;
   overflow: hidden;
   /* position: absolute;
   left: 40%; */
@@ -52,7 +54,6 @@ header img {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: 200px;
   gap: 0; /* Remove the gap between grid items */
-  padding: 10px;
   overflow: hidden;
 }
 

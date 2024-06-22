@@ -1,4 +1,4 @@
-# Overview
+# Nit Pic JS App Overview
 
 As a software engineer, my primary goal is continuous learning and improvement. Through this project, I aimed to demonstrate proficiency in JavaScript by building a web application that interacts with the Unsplash API to fetch and display images, handle search functionalities, and enable image downloads. This project allowed me to deepen my understanding of JavaScript language features, asynchronous programming, and working with APIs.
 
@@ -14,7 +14,7 @@ The purpose of developing this software was to enhance my skills in JavaScript p
 - Improve my proficiency in front-end development with vanilla JavaScript, HTML, and CSS.
 - Showcase my ability to build a responsive and functional web application.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/pcPFfq3w6vs)
 
 # Development Environment
 
